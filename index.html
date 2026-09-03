@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>BRK26 — O Futuro das Quadras</title>
+
+    <meta
+        name="description"
+        content="BRK26 — O Futuro das Quadras. Um jogo de basquete futurista."
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="app">
+
+    <!-- =====================================================
+         GLOBAL BACKGROUND
+    ====================================================== -->
+
+    <div class="background-grid"></div>
+    <div class="background-glow orange-glow"></div>
+    <div class="background-glow green-glow"></div>
+
+
+    <!-- =====================================================
+         HOME
+    ====================================================== -->
+
+    <section
+        id="menuScreen"
+        class="screen active"
+    >
+
+        <header class="topbar">
+
+            <div class="brand">
+
+                <span class="brand-mini">
+                    BASKETBALL
+                </span>
+
+                <div class="brand-name">
+                    BRK<span>26</span>
+                </div>
+
+            </div>
+
+
+            <div class="profile">
+
+                <div class="profile-box">
+                    R
+                </div>
+
+                <div class="profile-info">
+
+                    <strong>
+                        RODRIGUES
+                    </strong>
+
+                    <small>
+                        LEVEL
+                        <span id="headerLevel">1</span>
+                    </small>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <main class="home-container">
+
+            <!-- HERO -->
+
+            <section class="hero-panel">
+
+                <div class="hero-content">
+
+                    <div class="eyebrow">
+                        BRK26 // NEXT GENERATION
+                    </div>
+
+                    <h1>
+                        <span>BRK26</span>
+                        O FUTURO
+                        <b>DAS QUADRAS.</b>
+                    </h1>
+
+                    <p>
+                        Entre na arena. Evolua seu jogador.
+                        Domine seus adversários e construa
+                        sua própria lenda.
+                    </p>
+
+
+                    <div class="hero-buttons">
+
+                        <button
+                            id="playBtn"
+                            class="main-button"
+                        >
+                            <span>▶</span>
+                            JOGAR AGORA
+                        </button>
+
+                        <button
+                            class="outline-button"
+                            data-screen="careerScreen"
+                        >
+                            CARREIRA
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-visual">
+
+                    <div class="scanner"></div>
+
+                    <div class="orbit orbit-one"></div>
+                    <div class="orbit orbit-two"></div>
+                    <div class="orbit orbit-three"></div>
+
+                    <div class="future-ball">
+                        26
+                    </div>
+
+                    <div class="visual-info">
+                        <span>PROJECT</span>
+                        BRK26
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- PLAYER STATUS -->
+
+            <section class="status-grid">
+
+                <div class="status-card">
+
+                    <div class="status-icon">
+                        LV
+                    </div>
+
+                    <div>
+                        <small>LEVEL</small>
+                        <strong id="levelValue">1</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="status-card">
+
+                    <div class="status-icon">
+                        XP
+                    </div>
+
+                    <div>
+                        <small>EXPERIENCE</small>
+                        <strong id="xpValue">0</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="status-card">
+
+                    <div class="status-icon">
+                        ₿
+                    </div>
+
+                    <div>
+                        <small>BRK CREDITS</small>
+                        <strong id="creditsValue">500</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="status-card">
+
+                    <div class="status-icon">
+                        W
+                    </div>
+
+                    <div>
+                        <small>WINS</small>
+                        <strong id="winsValue">0</strong>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- NAVIGATION -->
+
+            <section class="navigation">
+
+                <button
+                    class="nav-button"
+                    data-screen="characterScreen"
+                >
+                    <span>01</span>
+                    PLAYERS
+                </button>
+
+
+                <button
+                    class="nav-button"
+                    data-screen="shopScreen"
+                >
+                    <span>02</span>
+                    BRK MARKET
+                </button>
+
+
+                <button
+                    class="nav-button"
+                    data-screen="statsScreen"
+                >
+                    <span>03</span>
+                    STATS
+                </button>
+
+            </section>
+
+
+            <!-- SOCIAL -->
+
+            <section class="social-section">
+
+                <a
+                    class="social-card"
+                    href="https://github.com/rodrigueds"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+
+                    <div class="social-symbol">
+                        GH
+                    </div>
+
+                    <div class="social-content">
+
+                        <small>
+                            CODE / PROJECT
+                        </small>
+
+                        <strong>
+                            GITHUB
+                        </strong>
+
+                    </div>
+
+                    <div class="social-arrow">
+                        ↗
+                    </div>
+
+                </a>
+
+
+                <a
+                    class="social-card"
+                    href="https://www.instagram.com/guesspjl"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+
+                    <div class="social-symbol">
+                        IG
+                    </div>
+
+                    <div class="social-content">
+
+                        <small>
+                            FOLLOW / CREATOR
+                        </small>
+
+                        <strong>
+                            INSTAGRAM
+                        </strong>
+
+                    </div>
+
+                    <div class="social-arrow">
+                        ↗
+                    </div>
+
+                </a>
+
+            </section>
+
+        </main>
+
+
+        <footer class="footer">
+
+            <span>
+                BRK26 © 2026
+            </span>
+
+            <span>
+                BRK26 — O FUTURO DAS QUADRAS
+            </span>
+
+        </footer>
+
+    </section>
+
+
+    <!-- =====================================================
+         PLAYER SELECTION
+    ====================================================== -->
+
+    <section
+        id="characterScreen"
+        class="screen"
+    >
+
+        <div class="screen-header">
+
+            <button
+                class="back-button"
+                data-screen="menuScreen"
+            >
+                ← VOLTAR
+            </button>
+
+            <div>
+                <small>BRK26</small>
+                <h2>PLAYERS</h2>
+            </div>
+
+            <div class="credits-display">
+                ₿ <span class="credits-text">500</span>
+            </div>
+
+        </div>
+
+
+        <div
+            id="playerList"
+            class="player-grid"
+        ></div>
+
+    </section>
+
+
+    <!-- =====================================================
+         MARKET
+    ====================================================== -->
+
+    <section
+        id="shopScreen"
+        class="screen"
+    >
+
+        <div class="screen-header">
+
+            <button
+                class="back-button"
+                data-screen="menuScreen"
+            >
+                ← VOLTAR
+            </button>
+
+            <div>
+                <small>BRK26</small>
+                <h2>BRK <span>MARKET</span></h2>
+            </div>
+
+            <div class="credits-display">
+                ₿ <span class="credits-text">500</span>
+            </div>
+
+        </div>
+
+
+        <div class="market-tabs">
+
+            <button class="market-tab active">
+                ALL
+            </button>
+
+            <button class="market-tab">
+                SHOES
+            </button>
+
+            <button class="market-tab">
+                EFFECTS
+            </button>
+
+            <button class="market-tab">
+                GEAR
+            </button>
+
+        </div>
+
+
+        <div
+            id="shopList"
+            class="shop-grid"
+        ></div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CAREER
+    ====================================================== -->
+
+    <section
+        id="careerScreen"
+        class="screen"
+    >
+
+        <div class="screen-header">
+
+            <button
+                class="back-button"
+                data-screen="menuScreen"
+            >
+                ← VOLTAR
+            </button>
+
+            <div>
+                <small>BRK26</small>
+                <h2>CAREER</h2>
+            </div>
+
+            <div class="career-record">
+                0 — 0
+            </div>
+
+        </div>
+
+
+        <div class="career-intro">
+
+            <span>01 // ROAD TO LEGEND</span>
+
+            <h2>
+                CONSTRUA
+                <b>SUA LENDA.</b>
+            </h2>
+
+            <p>
+                Vença partidas, ganhe XP e avance
+                pelas arenas do futuro.
+            </p>
+
+        </div>
+
+
+        <div class="career-track">
+
+            <div
+                class="career-node unlocked"
+                data-match="1"
+            >
+                <span>01</span>
+                <strong>FIRST STEP</strong>
+                <small>ROOKIE ARENA</small>
+            </div>
+
+
+            <div
+                class="career-line"
+            ></div>
+
+
+            <div
+                class="career-node"
+                data-match="2"
+            >
+                <span>02</span>
+                <strong>NEON CITY</strong>
+                <small>LEVEL 2</small>
+            </div>
+
+
+            <div
+                class="career-line"
+            ></div>
+
+
+            <div
+                class="career-node"
+                data-match="3"
+            >
+                <span>03</span>
+                <strong>CYBER DOME</strong>
+                <small>LEVEL 3</small>
+            </div>
+
+
+            <div
+                class="career-line"
+            ></div>
+
+
+            <div
+                class="career-node"
+                data-match="4"
+            >
+                <span>04</span>
+                <strong>BRK FINAL</strong>
+                <small>LEVEL 5</small>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         STATS
+    ====================================================== -->
+
+    <section
+        id="statsScreen"
+        class="screen"
+    >
+
+        <div class="screen-header">
+
+            <button
+                class="back-button"
+                data-screen="menuScreen"
+            >
+                ← VOLTAR
+            </button>
+
+            <div>
+                <small>BRK26</small>
+                <h2>STATISTICS</h2>
+            </div>
+
+            <div class="stats-player">
+                RODRIGUES
+            </div>
+
+        </div>
+
+
+        <div class="stats-grid">
+
+            <div class="big-stat">
+                <small>GAMES</small>
+                <strong id="statGames">0</strong>
+            </div>
+
+            <div class="big-stat">
+                <small>WINS</small>
+                <strong id="statWins">0</strong>
+            </div>
+
+            <div class="big-stat">
+                <small>POINTS</small>
+                <strong id="statPoints">0</strong>
+            </div>
+
+            <div class="big-stat">
+                <small>3PT</small>
+                <strong id="statThrees">0</strong>
+            </div>
+
+            <div class="big-stat">
+                <small>DUNKS</small>
+                <strong id="statDunks">0</strong>
+            </div>
+
+            <div class="big-stat">
+                <small>GREEN SHOTS</small>
+                <strong id="statGreens">0</strong>
+            </div>
+
+            <div class="big-stat wide">
+                <small>BEST COMBO</small>
+                <strong id="statCombo">0</strong>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         GAME
+    ====================================================== -->
+
+    <section
+        id="gameScreen"
+        class="screen game-screen"
+    >
+
+        <div class="game-ui">
+
+            <div class="game-top">
+
+                <div class="game-team">
+
+                    <small>PLAYER</small>
+
+                    <strong>
+                        RODRIGUES
+                    </strong>
+
+                </div>
+
+
+                <div class="scoreboard">
+
+                    <div>
+                        <small>YOU</small>
+                        <strong id="scoreValue">0</strong>
+                    </div>
+
+                    <div class="score-divider">
+                        :
+                    </div>
+
+                    <div>
+                        <small>CPU</small>
+                        <strong id="enemyScoreValue">0</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="game-time">
+
+                    <small>TIME</small>
+
+                    <strong id="timeValue">
+                        60
+                    </strong>
+
+                    <button
+                        id="pauseBtn"
+                        class="pause-button"
+                    >
+                        II
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="game-middle">
+
+                <div class="game-hud-left">
+
+                    <div class="hud-box">
+
+                        <small>COMBO</small>
+
+                        <strong id="comboValue">
+                            x0
+                        </strong>
+
+                    </div>
+
+
+                    <div class="hud-box">
+
+                        <small>STAMINA</small>
+
+                        <div class="hud-bar">
+                            <div
+                                id="staminaFill"
+                                class="hud-fill stamina"
+                            ></div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="hud-box">
+
+                        <small>SPECIAL</small>
+
+                        <div class="hud-bar">
+                            <div
+                                id="specialFill"
+                                class="hud-fill special"
+                            ></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    id="gameMessage"
+                    class="game-message"
+                ></div>
+
+            </div>
+
+
+            <div class="shot-interface">
+
+                <div class="shot-label">
+                    RELEASE
+                </div>
+
+                <div
+                    id="shotMeter"
+                    class="shot-meter"
+                >
+
+                    <div class="meter-zone red"></div>
+                    <div class="meter-zone yellow"></div>
+                    <div class="meter-zone green"></div>
+                    <div class="meter-zone yellow"></div>
+                    <div class="meter-zone red"></div>
+
+                    <div
+                        id="meterPointer"
+                        class="meter-pointer"
+                    ></div>
+
+                </div>
+
+                <div class="controls-hint">
+                    <b>WASD</b> MOVE
+                    <span>•</span>
+                    <b>SPACE</b> SHOOT
+                    <span>•</span>
+                    <b>SHIFT + E</b> DUNK
+                    <span>•</span>
+                    <b>F</b> SPECIAL
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <canvas id="gameCanvas"></canvas>
+
+
+        <!-- PAUSE -->
+
+        <div
+            id="pauseOverlay"
+            class="game-overlay hidden"
+        >
+
+            <div class="overlay-box">
+
+                <span>BRK26 // SYSTEM</span>
+
+                <h2>
+                    PAUSED
+                </h2>
+
+                <button
+                    id="resumeBtn"
+                    class="main-button"
+                >
+                    CONTINUAR
+                </button>
+
+                <button
+                    id="quitBtn"
+                    class="outline-button"
+                >
+                    SAIR DA PARTIDA
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- RESULT -->
+
+        <div
+            id="resultOverlay"
+            class="game-overlay hidden"
+        >
+
+            <div class="overlay-box result-box">
+
+                <span id="resultTag">
+                    MATCH COMPLETE
+                </span>
+
+                <h2 id="resultTitle">
+                    VICTORY
+                </h2>
+
+                <div class="final-score">
+
+                    <strong id="resultPlayerScore">
+                        0
+                    </strong>
+
+                    <span>—</span>
+
+                    <strong id="resultEnemyScore">
+                        0
+                    </strong>
+
+                </div>
+
+
+                <div class="reward-grid">
+
+                    <div>
+                        <small>XP</small>
+                        <strong id="resultXp">
+                            +0
+                        </strong>
+                    </div>
+
+                    <div>
+                        <small>CREDITS</small>
+                        <strong id="resultCredits">
+                            +0
+                        </strong>
+                    </div>
+
+                </div>
+
+
+                <button
+                    id="resultContinue"
+                    class="main-button"
+                >
+                    CONTINUAR
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
